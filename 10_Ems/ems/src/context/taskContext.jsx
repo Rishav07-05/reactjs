@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TaskContext(children) {
+const TaskContext = ({children}) =>  {
     return (
         <div>{children}</div>
     )
