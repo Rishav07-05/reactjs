@@ -33,7 +33,9 @@ const App = () => {
     // </div>
 
     // using Tailwind
-    <div></div>
+    <div>
+      <h1 className="text-5xl bg-[crimson] text-">Hello Guys</h1>
+    </div>
     
 
   )
