@@ -1,6 +1,7 @@
 // // import React from "react"
 // // import { useState } from "react"
 
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 
@@ -81,12 +82,15 @@ import Navbar from "./components/Navbar";
 
 // components 
 
-const App = () => {
-  return (
-    <>
-      <Navbar/>
-    </>
-  )
-}
+// const App = () => {
+//   return (
+//     <>
+//       <Navbar />
+//       <Footer/>
+//     </>
+//   )
+// }
 
-export default App;
+// export default App;
+
+
