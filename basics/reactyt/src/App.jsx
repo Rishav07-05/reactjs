@@ -1,7 +1,10 @@
 // // import React from "react"
 // // import { useState } from "react"
 
-import { useState } from "react";
+import Navbar from "./components/Navbar";
+
+
+// import { useState } from "react";
 
 // const App = () => {
 
@@ -47,29 +50,43 @@ import { useState } from "react";
 // export default App
 
 
+// two way Binding 
 
+// const App = () => {
+
+//   const submitHandler = (e) => {
+//     e.preventDefault();
+//     console.log('Submitted');
+//     setUser('')
+//   }
+
+//   const [user , setUser] = useState('')
+
+//   return (
+//     <div>
+//       <form onSubmit={(e) => {
+//         submitHandler(e)
+//       }} className="text-white rounded-3xl p-10">
+//         <input value={user} onChange={(e) => {
+//           setUser(e.target.value);
+//         }} type="text"  placeholder="Enter Your Name" className="m-5 p-4 bg-transparent placeholder-gray-500 border-2 border-green-200 rounded-lg"/>
+//         <button type="submit" className="p-3 rounded-md bg-green-600" >Submit</button>
+//       </form>
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+// components 
 
 const App = () => {
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-    console.log('Submitted');
-    setUser('')
-  }
-
-  const [user , setUser] = useState('')
-
   return (
-    <div>
-      <form onSubmit={(e) => {
-        submitHandler(e)
-      }} className="text-white rounded-3xl p-10">
-        <input value={user} onChange={(e) => {
-          setUser(e.target.value);
-        }} type="text"  placeholder="Enter Your Name" className="m-5 p-4 bg-transparent placeholder-gray-500 border-2 border-green-200 rounded-lg"/>
-        <button type="submit" className="p-3 rounded-md bg-green-600" >Submit</button>
-      </form>
-    </div>
+    <>
+      <Navbar/>
+    </>
   )
 }
-export default App
+
+export default App;

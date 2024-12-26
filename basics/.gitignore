@@ -3,3 +3,5 @@ package-lock.json
 package.json
 vite.config.js
 eslint.config.js
+postcss.config.js
+tailwind.config.js
