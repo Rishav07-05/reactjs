@@ -1,11 +1,18 @@
 // // import React from "react"
 // // import { useState } from "react"
-import { Route , Routes } from "react-router-dom"
-import About from "./pages/About"
-import Home from "./pages/Home"
-import Contact from "./pages/Contact"
-import Product from "./pages/Product"
-import Navbar from "./components/Navbar"
+// import { Route , Routes } from "react-router-dom"
+// import About from "./pages/About"
+// import Home from "./pages/Home"
+// import Contact from "./pages/Contact"
+// import Product from "./pages/Product"
+// import Navbar from "./components/Navbar"
+
+import { useContext } from "react"
+import Header from "./components/Header"
+import Section from "./components/Section"
+import { dataContext } from "./context/UserContext"
+
+// import UserContext from "./context/UserContext"
 
 // import axios from "axios"
 // import { useState , useEffect} from "react"
@@ -101,6 +108,9 @@ import Navbar from "./components/Navbar"
 
 
 
+
+
+
 // props dealing
 
 // const App = () => {
@@ -170,6 +180,8 @@ import Navbar from "./components/Navbar"
 
 
 
+
+
 // Integrating API with Axios
 
 
@@ -211,16 +223,40 @@ import Navbar from "./components/Navbar"
 // React router DOM
 
 
+// const App = () => {
+//   return (
+//     <div>
+//       <Navbar/>
+//       <Routes>
+//         <Route path='/about' element = {<About/>} />
+//         <Route path='/contact' element = {<Contact/>} />
+//         <Route path='/product' element = {<Product/>} />
+//         <Route path='/' element = {<Home/>} />
+//       </Routes>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+// context API 
+
+
 const App = () => {
+
+
+  const data = useContext(dataContext)
+  console.log(data);
+  
+
   return (
     <div>
-      <Navbar/>
-      <Routes>
-        <Route path='/about' element = {<About/>} />
-        <Route path='/contact' element = {<Contact/>} />
-        <Route path='/product' element = {<Product/>} />
-        <Route path='/' element = {<Home/>} />
-      </Routes>
+      <h1>This is APP {data} </h1>
+      <Header></Header>
+      <Section></Section>
     </div>
   )
 }
